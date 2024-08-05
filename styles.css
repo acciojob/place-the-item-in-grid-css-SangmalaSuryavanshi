@@ -1,2 +1,21 @@
 
 /* Your CSS Code here. */
+/* Style for the holder */
+.holder {
+  display: grid;                  /* Enable Grid layout */
+  grid-template-columns: repeat(2, 1fr); /* Create two equal columns */
+  grid-template-rows: repeat(2, 1fr);    /* Create two equal rows */
+  width: 200px;                   /* Total width of the grid */
+  height: 200px;                  /* Total height of the grid */
+  gap: 0;                         /* No gap between grid items (optional) */
+}
+
+/* Style for individual items */
+.item {
+  background-color: lightgray;   /* Background color for visibility */
+  display: flex;                 /* Flexbox for centering content */
+  align-items: center;           /* Center content vertically inside item */
+  justify-content: center;       /* Center content horizontally inside item */
+  border: 1px solid black;       /* Optional border to visualize grid items */
+  box-sizing: border-box;        /* Ensure padding and border are included in width/height */
+}
